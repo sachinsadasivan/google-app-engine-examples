@@ -1,0 +1,30 @@
+Step to Deploy Simple Web App (without Cloud Data Store) in GCP
+==============================================================================
+
+Step 1: Get new credentials on Gcloud Command line
+
+gcloud auth application-default login
+
+Step 2: cd into the cloudybasket-hello-world-src folder
+
+cd cloudybasket-hello-world-src
+
+Step 3: Deploy and test on a local environment
+
+sudo pip install -r requirements.txt
+
+Step 4: Run local development server
+
+dev_appserver.py app.yaml
+
+Step 5: Deploy to App Engine
+
+gcloud app deploy --version cloudybasket-hello-world
+
+Step 6: View the app deployment information
+
+gcloud app describe
+
+Step 6: Open the app in a browser
+
+gcloud app browse
